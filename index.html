@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaQuery.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Capstone - Ecommerce</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="menu-container">
+                    <div class="nav-brand">
+                        <img id="logo" src="assets/img/TwitchStoreLogo.png" alt="Twitch Store Logo">
+                    </div>
+                    <button id="menu-btn"><img src="assets/img/menu.svg" alt="Botão Menu"></button>
+                </div>
+                <div class="links-container">
+                    <ul class="link-list">
+                        <li class="link">Todos</li>
+                        <li class="link">Acessórios</li>
+                        <li class="link">Calçados</li>
+                        <li class="link">Camisetas</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="store">
+        <div class="products">
+            <ul class="products-container">
+                <li class="card">
+                    <img src="assets/img/jaqueta.svg" alt="">
+                    <div class="product-info">
+                        <a href="#">Camisetas</a>
+                        <h2 class="product-title">Lightweight Jacket</h2>
+                        <p class="product-desc">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta
+                            jaqueta vibrante</p>
+                        <p class="product-price">R$ 100.00</p>
+                        <button class="add">Adicionar ao carrinho</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <img src="assets/img/gorro.svg" alt="">
+                    <div class="product-info">
+                        <a href="#">Acessórios</a>
+                        <h2 class="product-title">Black Hat</h2>
+                        <p class="product-desc">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
+                        <p class="product-price">R$ 90.00</p>
+                        <button class="add">Adicionar ao carrinho</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cart-container">
+            <form id="search" action="">
+                <input type="text" placeholder="Digite aqui sua pesquisa">
+                <button>Pesquisar</button>
+            </form>
+
+            <div class="cart">
+                <div class="cart-title">
+                    <h2>Carrinho de compras</h2>
+                </div>
+
+                <div class="cart-itens">
+                    <ul id="cart-list">
+                        <li class="cart-product">
+                            <img src="assets/img/jaqueta.svg" alt="">
+                            <div class="cart-product-info">
+                                <h3>Lightweight Jacket</h3>
+                                <p>R$ 100</p>
+                                <button>Remover produto</button>
+                            </div>
+                        </li>
+                        <li class="cart-product">
+                            <img src="assets/img/jaqueta.svg" alt="">
+                            <div class="cart-product-info">
+                                <h3>Lightweight Jacket</h3>
+                                <p>R$ 100</p>
+                                <button>Remover produto</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cart-resume">
+                    <p>Quatidade:<span id="amount">2</span></p>
+                    <p>Total:<span id="total">R$ 200</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
