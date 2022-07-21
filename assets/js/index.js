@@ -405,8 +405,11 @@ onlyTagProduct(data)
 function search() {
     const form = document.querySelector('#search');
 
-    form.addEventListener('keyup', (e) => {
+    form.addEventListener('submit', (e) => {
         e.preventDefault()
+    })
+
+    form.addEventListener('keyup', () => {
 
         let input = document.querySelector("input").value
         input = input.toLowerCase();
