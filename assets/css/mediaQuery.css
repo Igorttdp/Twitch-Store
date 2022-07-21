@@ -1,4 +1,14 @@
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
+    .store {
+        grid-template-columns: 65% 35%;
+    }
+
+    .products-container {
+        gap: 3em;
+    }
+}
+
+@media (max-width: 1220px) {
     .nav-container {
         flex-direction: column;
         max-width: 100%;
@@ -27,5 +37,22 @@
         align-items: center;
         position: absolute;
         padding: 30px 0;
+    }
+
+    .store {
+        grid-template-columns: 100%;
+    }
+
+    .products {
+        padding-bottom: 6rem;
+    }
+
+    .products-container {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .card {
+        max-width: 250px;
     }
 }

@@ -30,10 +30,11 @@
                 </div>
                 <div class="links-container">
                     <ul class="link-list">
-                        <li class="link">Todos</li>
-                        <li class="link">Acessórios</li>
-                        <li class="link">Calçados</li>
-                        <li class="link">Camisetas</li>
+                        <li id="all">Todos</li>
+                        <li id="t-shirts">Camisetas</li>
+                        <li id="sweatshirt">Moletons</li>
+                        <li id="legs">Calças</li>
+                        <li id="accessories">Acessórios</li>
                     </ul>
                 </div>
             </div>
@@ -42,29 +43,7 @@
 
     <section class="store">
         <div class="products">
-            <ul class="products-container">
-                <li class="card">
-                    <img src="assets/img/jaqueta.svg" alt="">
-                    <div class="product-info">
-                        <a href="#">Camisetas</a>
-                        <h2 class="product-title">Lightweight Jacket</h2>
-                        <p class="product-desc">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta
-                            jaqueta vibrante</p>
-                        <p class="product-price">R$ 100.00</p>
-                        <button class="add">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="assets/img/gorro.svg" alt="">
-                    <div class="product-info">
-                        <a href="#">Acessórios</a>
-                        <h2 class="product-title">Black Hat</h2>
-                        <p class="product-desc">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
-                        <p class="product-price">R$ 90.00</p>
-                        <button class="add">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-            </ul>
+            <ul class="products-container"></ul>
         </div>
 
         <div class="cart-container">
@@ -79,34 +58,18 @@
                 </div>
 
                 <div class="cart-itens">
-                    <ul id="cart-list">
-                        <li class="cart-product">
-                            <img src="assets/img/jaqueta.svg" alt="">
-                            <div class="cart-product-info">
-                                <h3>Lightweight Jacket</h3>
-                                <p>R$ 100</p>
-                                <button>Remover produto</button>
-                            </div>
-                        </li>
-                        <li class="cart-product">
-                            <img src="assets/img/jaqueta.svg" alt="">
-                            <div class="cart-product-info">
-                                <h3>Lightweight Jacket</h3>
-                                <p>R$ 100</p>
-                                <button>Remover produto</button>
-                            </div>
-                        </li>
-                    </ul>
+                    <ul id="cart-list"></ul>
                 </div>
 
                 <div class="cart-resume">
-                    <p>Quatidade:<span id="amount">2</span></p>
-                    <p>Total:<span id="total">R$ 200</span></p>
+                    <p>Quatidade:<span id="amount">0</span></p>
+                    <p>Total:<span id="total">R$ 0.00</span></p>
                 </div>
             </div>
         </div>
     </section>
 
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
