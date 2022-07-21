@@ -231,6 +231,19 @@ form#search button:hover {
     overflow: auto;
 }
 
+.cart-itens::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cart-itens::-webkit-scrollbar-thumb {
+    background: var(--twitch-purple-3);
+    border-radius: 5px;
+}
+
+.cart-itens::-webkit-scrollbar-thumb:hover {
+    background: #4e2092;;
+}
+
 #cart-list {
     margin-top: 10px;
     display: flex;
